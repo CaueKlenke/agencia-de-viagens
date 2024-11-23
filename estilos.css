@@ -1,0 +1,439 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;;
+}
+
+body {
+    background-color: #90909039;
+    font-family: Raleway;
+}
+
+.secao-limita-largura {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+/* Topo */
+
+header {
+    height: 55px;
+    width: 100%;
+    background-color: #fff;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+}
+
+header img{
+    width: 32px;
+}
+
+header h1 {
+    font-size: 22px;
+    padding: 0 20px;
+    color: #5d15d1;
+}
+
+/* Formulário */
+
+main {
+    width: 100%;
+}
+
+.imagem-fundo {
+    background: url('img/bahia.jpg') no-repeat;
+    background-position: cover ;
+    width: 100%;
+    padding: 50px;
+}
+
+.topo-form {
+    background-color: #5d15d1;
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topo-form span{
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+    margin-left: 5px;
+}
+
+.topo-form img {
+    width: 20px;
+    rotate: -45deg;
+}
+
+form {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+}
+
+.agrupamento-form {
+    padding: 30px 25px 20px;
+}
+
+form h2 {
+    font-size: 22px;
+    margin-bottom: 24px;
+}
+
+form label {
+    font-size: 16px;
+}
+
+form input {
+    width: 100%;
+    height: 32px;
+    margin: 12px 0;
+    padding: 0 5px;
+}
+
+.divisao-formulario {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.divisao-formulario div{
+    width: calc(50% - 10px);
+}
+
+.divisao-formulario select {
+    width: 100%;
+    padding: 0 5px;
+    height: 32px;
+    margin: 12px 0;
+}
+
+.secao-escolha {
+    margin: 10px 0;
+}
+
+.secao-escolha div {
+    display: flex;
+    align-items: center;
+}
+
+.secao-radio {
+    width: 120px;
+}
+
+.secao-escolha input {
+    width: 15px;
+    margin-right: 10px;
+}
+
+.secao-escolha label {
+    margin-right: 50px
+}
+
+.checkbox {
+    display: flex;
+}
+
+.checkbox input {
+    width: 15px;
+}
+
+.checkbox label {
+    margin-right: 30px
+}
+
+button {
+    font-size: 16px;
+    color: #fff;
+    background-color: #5d15d1;
+
+    cursor: pointer;
+    padding: 7px 12px;
+    margin-top: 12px;
+    border-radius: 5px;
+    border: none;
+}   
+
+/* Ofertas */
+
+.secao-ofertas {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: auto;
+    margin: 32px auto 0;
+}
+
+.subtitulos {
+    margin-top: 20px
+}
+
+.subtitulos h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.subtitulos h4 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.subtitulos span {
+    font-weight: 700;
+}
+
+.galeria-ofertas {
+    width: 100%;
+    height: 375px;
+    display: flex;
+    justify-content: space-between;
+    margin: 32px auto 0 ;
+}
+
+.imagem-destaque {
+    position: relative;
+    height: 100%;
+    width: calc(420% - 10px)
+}
+
+.imagem-destaque img{
+    width: 100%;
+    height: 100%;
+}
+
+.ofertas-imagens {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.box-imagens {
+    width: calc(100% - 10px);
+    height: calc(50% - 10px);
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-imagens figure {
+    position: relative;
+    width: calc(50% - 10px);
+    position: relative;
+}
+
+.box-imagens img {
+    width: 100%;
+    height: 100%;
+}
+
+.galeria-ofertas  figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    color: white;
+    background-color: #00000050;
+    width: 100%;
+    font-size: 17px;
+    padding: 5px 10px;
+}
+
+/* Anúncio */ 
+
+.secao-anuncios .subtitulos{
+    margin: 30px 0 20px;
+}
+
+.galeria-anuncio {
+    width: 100%;
+    height: 375px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.galeria-anuncio img {
+    width: calc(102% - 10px);
+    object-fit: cover;
+    height: 100%;
+}
+
+.secao-legenda {
+    width: calc(102% - 10px);
+    background-color: #fff;
+    padding: 20px;
+    line-height: 30px;
+}
+
+.secao-legenda figcaption {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.secao-legenda p {
+    font-size: 14px;
+}
+
+/* Rodapé */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    margin-top: 150px;
+    padding: 20px 0;
+    background-color: #5d15d1;
+    color: white;
+}
+
+.box-rodape img{
+    width: 18px;
+}
+
+.box-rodape h3 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.rodape span {
+    font-size: 16px;
+    line-height: 35px;
+    margin-left: 10px;
+}
+
+.rodape {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.conteudo {
+    display: flex;
+    align-items: center;
+}
+
+/* Responsivo */
+
+/*
+(320px a 540px)
+(541px a 768px)
+(769 a 1100px)
+(1101 ou mais) 
+*/
+
+@media screen and (max-width: 1100px) {
+
+    .secao-limita-largura {
+        width: 90%;
+    }
+
+    .galeria-ofertas {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    button {
+        width: 100%;
+    }
+
+    .galeria-ofertas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagem-destaque {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .imagem-destaque figure {
+        width: 100%;
+        height: 225px;
+        margin-top: 15px;
+    }
+
+
+    .box-imagens {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .box-imagens figure{
+        width: 100%;
+        height: 225px;
+        margin-top: 15px; 
+    }
+
+    /* Anúncio */
+
+    .galeria-anuncio {
+        display: flex;
+        flex-direction: column;
+        
+        width: 100%;
+        height: 100%;
+    }
+
+    .galeria-anuncio figure {
+        width: 100%;
+        height: 100%;
+        margin-top: 15px;
+    }
+
+    /* Rodapé */
+
+    .rodape {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-rodape {
+        width: 260px;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 540px) {
+
+    .divisao-formulario {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .agrupamento-form .select-tamanho {
+        width: 100%;
+    }
+
+    .secao-escolha, .secao-radio {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .agrupamento-form .data {
+        width: 100%;
+    }
+
+    .secao-escolha, .secao-radio input {
+        width: 100%;
+    }
+
+}
